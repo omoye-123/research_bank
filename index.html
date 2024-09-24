@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <h1>Welcome</h1>
+        <div class="btn-con">
+          <button id="btn-resource" class="btn-resource">
+            Create A Resource
+          </button>
+        </div>
+      </div>
+
+      <div class="empty-con">
+        <div class="data" id="data">
+          <div class="titledelete-icon">
+            <div class="title" id="postTitle">
+              <a href="#"></a>
+              <h4></h4>
+              <div class="delete-icon" id="delete-icon">
+                <i class="fa-regular fa-trash-can"></i>
+              </div>
+            </div>
+          </div>
+          <div class="website-link" id="postLink">
+            <p></p>
+          </div>
+          <div class="description-info" id="postDescription">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-con" id="modal-con">
+        <form id="form">
+          <div class="close" id="close-icon">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <div class="create">
+            <h3>Create Resource</h3>
+          </div>
+
+          <div class="input-group">
+            <div class="website-name">
+              <label for="website">Name of Website</label>
+            </div>
+            <div class="web-input">
+              <input
+                type="text"
+                name="website"
+                id="website-inp"
+                placeholder="eg. Fashion Designers Website"
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="link-info">
+              <label for="link">Link of Website</label>
+            </div>
+            <div class="input-link">
+              <input
+                type="link"
+                name="link"
+                id="link-inp"
+                placeholder="www.link.com"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="description-info">
+              <label for="website-description">Description Of Website</label>
+            </div>
+            <div class="input-description">
+              <textarea
+                id="website-description"
+                name="website-description"
+                placeholder="Enter Description"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="button-con" id="button">
+            <button>Create</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
